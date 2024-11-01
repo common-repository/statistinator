@@ -1,0 +1,72 @@
+/* Checkbox switch */
+/* HTML */
+/*
+<div class="checkbox-switch">
+    <input type="checkbox" class="input-checkbox" />
+    <div class="checkbox-animate"></div>
+</div>
+*/
+
+.checkbox-switch,
+.checkbox-switch .checkbox-animate,
+.checkbox-switch input.input-checkbox {
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.checkbox-switch {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+.checkbox-switch input.input-checkbox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.checkbox-switch .checkbox-animate {
+    position: relative;
+    background-color: #95a5a6;
+    -webkit-transition: background 0.25s ease-out 0s;
+    transition: background 0.25s ease-out 0s;
+}
+
+.checkbox-switch .checkbox-animate:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #fff;
+    top: 1px;
+    left: 1px;
+     -webkit-transition: left 0.3s ease-out 0s;
+    transition: left 0.3s ease-out 0s;
+    box-shadow: rgba(0,0,0,0.5) 1px 0px 5px;
+    z-index: 1;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate {
+    background-color: #0085ba;
+}
+
+.checkbox-switch input.input-checkbox:checked + .checkbox-animate:before {
+    left: 21px;
+    background-color: #fff;
+    box-shadow: rgba(0,0,220,0.5) -1px 0px 5px;
+}
+

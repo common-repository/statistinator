@@ -1,0 +1,67 @@
+/* Create Key in Dashboard */
+.sts-warning-wrapper {
+    padding: 40px;
+    text-align: center;
+}
+/* Create Key */
+.sts-key-wrap {
+    text-align: center;
+}
+.sts-key-wrap p {
+    margin: 40px 0;
+}
+.sts-key-wrap table {
+    width: 300px;
+    margin: auto;
+}
+.sts-key-wrap h1 {
+    font-size: 2em;
+}
+.sts-key-wrap label {
+    font-size: 1.2em;
+}
+.sts-key-wrap input.button {
+    font-size: 1.2em;
+    padding: 1px 15px 2px;
+    height:30px;
+}
+
+/* Graph */
+.sts-graph-container .sts-left ,
+.sts-graph-container .sts-right {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.sts-graph-container .sts-right .sts-latest {
+    padding-left: 100px;
+    margin-top: 100px;
+}
+
+.sts-graph-container .sts-right .sts-latest > div {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.sts-graph-container .sts-right .sts-latest h4 {
+    display: inline-block;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.sts-graph-container .sts-right .sts-latest img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sts-graph-container .sts-right .sts-latest .metric {
+    font-size: 2em;
+}
+input.sts-error {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+p.sts-error-message {
+    color: rgba(255,0,0,0.8);
+}
+
+
